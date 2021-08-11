@@ -12,7 +12,6 @@ class NumericField(models.Model):
     positive_integer_field = models.PositiveIntegerField()
     positive_small_integer_field = models.PositiveSmallIntegerField()
     binary_field = models.BinaryField(max_length=255)
-    uuid_field = models.UUIDField()
 
 
 class StringField(models.Model):
@@ -55,3 +54,4 @@ class MiscellaneousField(models.Model):
     generic_ip_address_field = models.GenericIPAddressField(protocol='both', unpack_ipv4=True)
     json_field = models.JSONField()
     slug_field = models.SlugField()
+    uuid_field = models.UUIDField()
