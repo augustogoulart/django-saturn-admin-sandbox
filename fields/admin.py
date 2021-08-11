@@ -1,4 +1,6 @@
 from django.contrib import admin
+from saturn.admin import site as saturn_admin
+
 from .models import (
     NumericField,
     StringField,
@@ -6,6 +8,8 @@ from .models import (
     FileField,
     BooleanField,
     MiscellaneousField)
+
+saturn_admin.register([NumericField, StringField, DateTimeField, FileField, BooleanField, MiscellaneousField])
 
 
 @admin.register(NumericField)
